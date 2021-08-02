@@ -1,0 +1,14 @@
+<div class="mb-3">
+
+    <h1 class="text-center mb-3 mt-3">Create new post</h1>
+    <form action="/posts/add" method="POST">
+    
+        <%- include ("./partials/messages") %>
+    
+        <label>Text: </label>
+        <textarea type="text" name="body" class="form-control" rows="5"></textarea>
+        <button type="submit" class="btn btn-primary mt-4">Create new post</button>
+        
+    </form>
+
+</div>

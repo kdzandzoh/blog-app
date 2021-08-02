@@ -1,0 +1,22 @@
+<div class="mb-3">
+
+    <h1 class="text-center mb-3 mt-3">Add comment</h1>
+    <form action="/posts/<%= post._id %>" method="POST">
+    
+        <%- include ("./partials/messages") %>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title" style='display:inline'> <%= post.username %> </h5>  
+                <p style='display:inline; float: right'> <%= post.createdAt.toDateString().substring(4) %> </p>
+                <p class="mt-2"> <%= post.body %> </p>
+            </div>
+        </div>
+    
+        <label>Text: </label>
+        <textarea type="text" name="body" class="form-control" rows="5"></textarea>
+        <button type="submit" class="btn btn-primary mt-4">Add comment</button>
+        
+    </form>
+
+</div>

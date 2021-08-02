@@ -1,0 +1,9 @@
+<h1 class="text-center mb-3 mt-3">Comments for <%= post.username %>'s post </h1>
+<% comment.forEach(function(c) {%>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"> <%= c.username %> </h5>  
+                <p class="mt-2"> <%= c.body %> </p>
+            </div>
+        </div>
+<% }); %>
